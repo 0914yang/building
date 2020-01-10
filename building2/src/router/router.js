@@ -11,7 +11,9 @@ import News from '@/pages/news';
 import Project from '@/pages/project';
 import Tender from '@/pages/tender';
 import Developer from '@/pages/developer';
-
+import ProjectDetail from '@/pages/projectDetail';
+import TenderDetail from '@/pages/tenderDetail';
+import NewsDetail from '@/pages/newsDetail';
 
 //注册全局组件
 Vue.component('headerVue', Head);
@@ -30,8 +32,11 @@ export default new Router({
         {name: 'data',path: '/data',component: Data},
         {name: 'news',path: '/news',component: News},
         {name: 'project',path: '/project',component: Project},
-        {name: 'tender',path: '/tender',component: Tender},   
+        {name: 'tender',path: '/tender',component: Tender},
         {name: 'developer',path: '/developer',component: Developer},
+        {name: 'projectDetail',path: '/projectDetail',component: ProjectDetail},
+        {name: 'tenderDetail',path: '/tenderDetail',component: TenderDetail},
+        {name: 'newsDetail',path: '/newsDetail',component: NewsDetail},
         // {name: 'imageTask',path: '/imageTask',component: ImageTask,,
       ]
     },
